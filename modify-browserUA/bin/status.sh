@@ -1,5 +1,7 @@
 #!/bin/sh
 
+TARGET="/usr/bin/browser"
+
 msg() {
     echo "$1"
     if command -v eips >/dev/null 2>&1; then
@@ -7,14 +9,12 @@ msg() {
     fi
 }
 
-CONF_FILE="/var/local/mesquite/browser/config.xml"
-
-if [ ! -f "$CONF_FILE" ]; then
-    showmsg "ERR: cannot find config.xml"
+if [ ! -f "$TARGET" ]; then
+    showmsg "ERR: cannot find browser script"
     exit 1
 fi
 
-CURRENT_UA=$(grep "user-agent" "$CONF_FILE" | sed -e 's/.*value="//' -e 's/".*//')
+CURRENT_UA=$(grep "\--user-agent=" "$TARGET" | sed -n 's/.*--user-agent="\([^"]*\)".*/\1/p')
 
 if [ -z "$CURRENT_UA" ]; then
     showmsg "ERR cannot analyse UA"

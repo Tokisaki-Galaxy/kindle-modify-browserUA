@@ -1,8 +1,7 @@
 #!/bin/sh
 
-CONF_FILE="/var/local/mesquite/browser/config.xml"
-BACKUP_FILE="/var/local/mesquite/browser/config.xml.bak"
-
+CONF_FILE="/usr/bin/browser"
+BACKUP_FILE="/usr/bin/browser.bak"
 mntroot rw
 
 if [ -f "$BACKUP_FILE" ]; then
