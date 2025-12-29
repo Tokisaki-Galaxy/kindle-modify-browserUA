@@ -1,0 +1,28 @@
+{
+	"items": [
+	{
+		"name": "modify browserUA",
+		"priority": 900,
+		"items": [
+		{
+            "name": "Change to Desktop UA",
+            "priority": 1,
+            "action": "sh bin/rename.sh",
+            "exitmenu": true
+		},
+		{
+			"name": "Status",
+			"priority": 2,
+			"action": "sh bin/status.sh",
+			"exitmenu": false
+		},
+		{
+            "name": "Restore",
+            "priority": 3,
+            "action": "sh bin/restore.sh",
+            "exitmenu": true
+		}
+		]
+	}
+	]
+}
