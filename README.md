@@ -2,6 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Kindle-Modification-orange?style=for-the-badge&logo=amazon" alt="Kindle">
+  <img src="https://img.shields.io/badge/Firmware-5.16.4+-green?style=for-the-badge" alt="Firmware">
   <img src="https://img.shields.io/badge/Shell-Script-bash?style=for-the-badge&logo=gnu-bash" alt="Shell">
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License">
 </p>
@@ -11,6 +12,9 @@
 </p>
 
 A simple KUAL extension to modify the Kindle built-in browser's User-Agent, allowing you to access desktop versions of websites.
+
+> [!NOTE]
+> This tool is only compatible with **Kindle Firmware 5.16.4 and above**, as Amazon switched to a **Chromium-based** browser engine starting from this version.
 
 ## ✨ Features
 
@@ -41,6 +45,9 @@ A simple KUAL extension to modify the Kindle built-in browser's User-Agent, allo
 # Kindle 浏览器 User-Agent 修改器
 
 这是一个简单的 KUAL 插件，用于修改 Kindle 内置浏览器的 User-Agent (UA)，让你能够访问网页的桌面版。
+
+> [!NOTE]
+> 本工具仅适用于 **Kindle 固件版本 5.16.4 及以上**。因为从该版本开始，Kindle 浏览器切换到了 **Chromium** 内核。
 
 ## ✨ 功能特性
 
